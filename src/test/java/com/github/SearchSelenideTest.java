@@ -12,7 +12,7 @@ public class SearchSelenideTest{
 
     @Test
     void testSearchSelenide() {
-        //Открываем странциу selenide
+        //Открываем страницу selenide
         open("https://github.com/");
         $("[data-test-selector=nav-search-input]").setValue("selenide").pressEnter();
         $("ul.repo-list li a").click();
